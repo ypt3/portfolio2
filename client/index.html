@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Alan Tsai</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-animate.js"></script>
+    <script src="js/scripts/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="/js/app.js"></script>
+
+    <script type="text/javascript" src='js/controllers/main.js'></script>
+    <script type="text/javascript" src='js/controllers/resumeController.js'></script>
+    <script type="text/javascript" src='js/controllers/ModalInstanceCtrl.js'></script>
+    <script type="text/javascript" src='/js/scripts/ui-bootstrap-tpls-1.2.5.min.js'></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/portfolio.css" rel="stylesheet">
+    <link rel="icon" sizes="32x32" type="image/png" href="./img/logos/AT-Logo.png">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <!--  Angular-->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index" ng-app="myPage">
+
+<div ng-view="">
+
+    <div ng-controller="UsersController">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">AT</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#services">Toolbox</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#about">About</a>
+                        </li>
+                        <!-- <li>
+                            <a class="page-scroll" href="#blog">Blog</a>
+                        </li> -->
+                        <li>
+                            <a class="page-scroll" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="intro-text">
+                    <div class="intro-heading">Alan Tsai</div>
+                    <div class="intro-lead-in">Full Stack & Front-End Developer</div>
+                    <a href="#contact" class="page-scroll btn btn-xl">Let's meet up!!</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Services Section -->
+        <section id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Toolbox</h2>
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2"><h3 class="section-subheading text-muted">I've always want to be great developer, and being a great developer we have to know which tool is the best option to get the job done most efficiently. Below are some of the tools I use, but there is always new tool coming out. You never stopped learning! </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center">
+
+                    <div class="col-md-4">
+                        <div class="fadeUp">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-danger"></i>
+                                <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="service-heading">Languages</h4>
+                            <ul class="list-unstyled">
+                                <li>JavaScript</li>
+                                <li>Python</li>
+                                <li>Ruby</li>
+                                <li>Java</li>
+                                <li>SQL</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 fadeUp">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-danger"></i>
+                            <i class="fa fa-database fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">Technologies</h4>
+                        <!-- <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p> -->
+                        <ul class="list-unstyled">
+                          <li>AngularJS</li>
+                          <li>NodeJS</li>
+                          <li>Rails</li>
+                          <li>MongDB</li>
+                          <li>PostgreSQL</li>
+                          <li>MySQL</li>
+                          <li>JQuery</li>
+                       </ul>
+                    </div>
+                    <div class="col-md-4 fadeUp">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-danger"></i>
+                            <i class="fa fa-code-fork fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">Miscellaneous</h4>
+                        <ul class="list-unstyled">
+                          <li>Git</li>
+                          <li>Bower</li>
+                          <li>Yeoman</li>
+                          <li>Heroku</li>
+                          <li>AWS</li>
+                          <li>Flask</li>
+                          <li>Django</li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid Section -->
+        <section id="portfolio" class="bg-light-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Portfolio</h2>
+                        <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a ng-click="openModal('Mean')" class="portfolio-link">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="../img/Vibe/meanmain.png" class="img-responsive modalLink" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>MEAN Blog</h4>
+                            <p class="text-muted">MEAN Stack blog website that people can share their options for any topics</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a ng-click="openModal('FlixnGrub')"  class="portfolio-link" >
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="../img/FlixnGrub/gamemain.png"  class="img-responsive modalLink" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Game Shop</h4>
+                            <p class="text-muted"> E commerce site that people place orders of those products.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a ng-click="openModal('Giphtionary')" class="portfolio-link" >
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="../img/Giphtionary/doist.png" class="img-responsive " alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Doist</h4>
+                            <p class="text-muted">Pictionary style game using GIF's from Giphy's API</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a  ng-click="openModal('MEANTrivia')" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="/img/MEANTrivia/work.png" class="img-responsive " alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Working on it</h4>
+                            <p class="text-muted">Under construction</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a ng-click="openModal('PropertyFindr')" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="/img/reactProperty/login.png" class="img-responsive " alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Idea Wall</h4>
+                            <p class="text-muted">For people to post, share and like ideas</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a ng-click="openModal('DojoParty')" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="/img/DojoParty/ball1.png" class="img-responsive " alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Ball Traveler</h4>
+                            <p class="text-muted">Find out where & when your team is playing</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">About Me</h2>
+                        <h3 class="section-subheading text-muted">My Software Engineering journey</h3>
+                    </div>
+                </div>
+                <div class="row fadein">
+                    <div class="col-lg-12">
+                        <ul class="timeline">
+                            <li id="postGrad">
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/about/us.png" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>2004</h4>
+                                        <h4 class="subheading">American Dream</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">Came to United States when I was 15 and became diverse with the different cultures exposure which is key to how I can adapt easily to different environments.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="UCLA" class="timeline-inverted" >
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/about/njit.jpeg" alt="" >
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>2008-2013</h4>
+                                        <h4 class="subheading">B.S Electrical Engineering</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">Once I got into college, I decided to pursue Electrical Engineering and learn practical experience for being a Hardware Engineer.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="UCLA">
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/about/pha.jpeg" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>2013-2015</h4>
+                                        <h4 class="subheading">Hardware Engineer</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">After college, I moved to the Silicon Valley to pursue a career in hardware. During my time there, I worked in QA as well as Product Manager handling over $2 milllion dollars worth of supplies (Switching Power supplies, Battery chargers, Power LED drivers, Switching servers, and more) at Phihong USA.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted" id="postGrad">
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/about/progLanguages.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>September 2015</h4>
+                                        <h4 class="subheading">Software journey begins</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                            <p class="text-muted">With my free time after work, I began coding as habit. I quickly learned how satisfying it was both intellectually and creatively and couldn't quench my thirst to learn more. Later, I realized how much I wanted to get serious about becoming a Software Engineer.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="bootCamp">
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/logos/codingDojo.png" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>October 2015 - February 2016</h4>
+                                        <h4 class="subheading">Coding Dojo Bootcamp</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">After self-learning for months, I joined the bootcamp Coding Dojo to learn more in depth on my web development skills and hopefully, I can bring it to the next level. Fourteen weeks later, I was able to create multiple projects on my own and achieved their top certification of a double Black Belt.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted" id="now">
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/about/coding.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>Now</h4>
+                                        <h4 class="subheading">Learn and new opportunities</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                            <p class="text-muted">Now a days, I am learning new technology such as ReactJs, BackboneJs, SASS, and looking for new ways to utilize these frameworks in a fun and efficient way.
+
+                                              A fun fact about me - when I am not building apps or learning new technology, I like to hang out with my friends, listen to EDM music, hiking, and working out.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li >
+                                <div class="timeline-image">
+                                    <h4>Let's
+                                        <br>Get in
+                                        <br>Touch!
+                                    </h4>
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <!-- <h4>Hobbies</h4> -->
+                                        <!-- <h4 class="subheading">Other</h4> -->
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted"></p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center" id="contactHead">
+                        <h2 class="section-heading">Thanks for visiting!</h2>
+                        <div class="col-md-8 col-md-offset-2">
+                            <h3 style="color: white" class="section-subheading">I'm always looking for new opportunities to contribute or collaborate. If you are interested, click any of the links below to get in touch! Otherwise, send all emails to alanalan216@gmail.com</h3>
+                        </div>
+
+                    </div>
+                    <div class="row textInfo">
+                        <div class=" col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 getMe text-center">
+                            <ul class="list-inline">
+                                <li class="list-item">
+                                    <a href="mailto:alanalan216@gmail.com"><img src="/img/logos/gmailLogo2.jpeg"  class="img-responsive  techImg" /></a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="https://www.github.com/ypt3"><img class="img-responsive techImg " src="/img/logos/github_white.png" /  /> </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="https://www.linkedin.com/in/alant216"><img class="img-responsive  techImg" src="/img/logos/linkedIn3.png" / > </a>
+                                </li>
+                                    <li class="list-item">
+                                      <a href="https://angel.co/ypt3"><img src="/img/logos/angel.png" class=" img-responsive techImg" /></a>
+                                    </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <!-- <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <span class="copyright">Copyright &copy; Christian Gonzalez 2016</span>
+                    </div>
+                </div>
+            </div>
+        </footer> -->
+
+    </div>
+
+</div>
+
+
+    <!-- jQuery -->
+    <script src="js/scripts/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/scripts/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/scripts/classie.js"></script>
+    <script src="js/scripts/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/scripts/jqBootstrapValidation.js"></script>
+    <script src="js/scripts/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/scripts/portfolio.js"></script>
+
+</body>
+
+</html>
