@@ -22,7 +22,7 @@ myPage.controller('UsersController', function ($scope, $location, $log, $uibModa
               {pic: "../img/logos/PassportLogo.svg", caption: "PassportJS"},
               {pic: "../img/logos/awslogo.png", caption: "AWS"}
            ],
-           link: "http://54.187.89.164/#/home"
+           github: "https://github.com/ypt3/MEAN-blog"
       } ,
       FlixnGrub: {
           title: "Game Shop",
